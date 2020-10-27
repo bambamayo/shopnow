@@ -18,13 +18,13 @@ export default function Layout({ children }) {
   `);
 
   return (
-    <div className="min-h-screen flex">
+    <div className="min-h-screen flex flex-col">
       <HeaderContainer
         siteTitle={data.site.siteMetadata.title}
         siteDescription={data.site.siteMetadata.description}
         siteAuthor={data.site.siteMetadata.author}
       />
-      <main>{children}</main>
+      <main className="flex-grow mx-auto w-auto md:px-8 p-8">{children}</main>
       <Footer siteTitle={data.site.siteMetadata.title} />
     </div>
   );

@@ -3,7 +3,3 @@
 @tailwind components;
 
 @tailwind utilities;
-
-p {
-  @apply text-red-600;
-}

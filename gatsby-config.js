@@ -11,12 +11,12 @@ module.exports = {
         component: require.resolve(`./src/components/layout`),
       },
     },
-    "gatsby-plugin-postcss",
+    `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {
         tailwind: true,
-        purgeOnly: ["src/css/style.css"],
+        purgeOnly: ["src/styles/global.css"],
       },
     },
   ],
