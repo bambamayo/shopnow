@@ -3,3 +3,20 @@
 @tailwind components;
 
 @tailwind utilities;
+
+.product-list {
+  display: grid;
+  grid-gap: theme("spacing.20");
+}
+
+@screen sm {
+  .product-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@screen lg {
+  .product-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
